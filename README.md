@@ -76,10 +76,10 @@ flowchart LR
     API --> Prisma
     Prisma --> DB
 
-**    Selected Engineering Problems
-**
-**1. Multi-Tenant Data Boundaries
-**
+Selected Engineering Problems
+
+1. Multi-Tenant Data Boundaries
+
 SPP supports organizations containing teams, coaches and athletes.
 
 A core engineering requirement is ensuring users only access data that belongs to the correct organization and role context.
@@ -94,8 +94,8 @@ coach and athlete workflows
 
 The goal is to keep tenant boundaries explicit rather than relying on frontend filtering alone.
 
-**2. Role-Based Permissions
-**
+2. Role-Based Permissions
+
 Coach and athlete experiences require different capabilities.
 
 Examples include:
@@ -107,8 +107,8 @@ team-scoped staff operating only within their assigned teams
 
 Authorization is enforced at the backend rather than treated only as a user-interface concern.
 
-**3. Data Modelling for Training History
-**
+3. Data Modelling for Training History
+
 Training software must distinguish between what was prescribed and what actually happened.
 
 SPP separates workout prescriptions from performed results so historical athlete data remains accurate even if a coach later modifies a future workout.
@@ -121,8 +121,8 @@ future programming changes do not rewrite athlete history
 
 This distinction became an important domain-modelling decision.
 
-**4. Web and Mobile Experiences from a Shared Domain
-**
+4. Web and Mobile Experiences from a Shared Domain
+
 SPP has two different primary interfaces:
 
 Coach Portal
@@ -149,16 +149,16 @@ progress
 
 Both experiences share backend data and domain concepts, but their interaction models are intentionally different.
 
-**5. Authentication and Application Security
-**
+5. Authentication and Application Security
+
 Authentication and authorization are designed as backend concerns rather than relying on client-side trust.
 
 The application uses protected routes and role-aware access controls to prevent users from reaching data or operations outside their permitted context.
 
 Development and production authentication concerns are also kept separate so local development tooling does not become part of the production security model.
 
-**6. Development and Test Data Separation
-**
+6. Development and Test Data Separation
+
 SPP uses separate development and test database environments.
 
 Automated test workflows are designed to fail safely rather than risk destructive operations against the normal development database.
@@ -187,8 +187,8 @@ Build reusable components where reuse improves clarity
 Avoid introducing abstraction before the underlying problem is understood
 Selected Product Areas
 
-**The broader platform includes work across areas such as:
-**
+The broader platform includes work across areas such as:
+
 athlete and team management
 training programming
 workout delivery
