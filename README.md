@@ -64,18 +64,23 @@ My work spans frontend development, mobile development, backend APIs, data model
 
 ```mermaid
 flowchart LR
-    Coach[Coach Portal<br/>React + TypeScript]
-    Player[Player Portal<br/>React Native + Expo]
-
-    API[NestJS API<br/>TypeScript]
-    Prisma[Prisma ORM]
-    DB[(MySQL)]
+    Coach["Coach Portal<br/>React + TypeScript"]
+    Player["Player Portal<br/>React Native + Expo"]
+    API["NestJS API<br/>TypeScript"]
+    Prisma["Prisma ORM"]
+    DB[("MySQL")]
 
     Coach --> API
     Player --> API
     API --> Prisma
     Prisma --> DB
+```
 
+The Coach Portal and Player Portal share the same backend and domain model while presenting different workflows based on role, context and device.
+
+---
+
+## Selected Engineering Problems
 Selected Engineering Problems
 
 1. Multi-Tenant Data Boundaries
