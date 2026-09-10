@@ -6,6 +6,12 @@ Sports Performance Platform (SPP) is a full-stack software platform for coaches,
 
 The production source repository is private. This public repository documents selected engineering decisions, architecture and product-development work without exposing proprietary source code or sensitive implementation details.
 
+<p align="center">
+  <img src="images/spp-social-image-master.png"
+       alt="Sports Performance Platform — Connected Performance Intelligence"
+       width="100%" />
+</p>
+
 ---
 
 ## What I Built
@@ -141,6 +147,30 @@ This includes:
 - environment validation
 - isolated test data
 - controlled seed behaviour
+
+---
+
+## Selected Product Screens
+
+These screens show selected areas of the Coach Portal and illustrate how shared performance data is translated into operational workflows.
+
+### Athlete Profile
+
+A connected athlete view bringing together current performance state, programming, readiness, development objectives and recent evidence.
+
+![Sports Performance Platform Athlete Profile](images/spp-athlete-profile-desktop.webp)
+
+### Performance Overview
+
+A team-level performance workspace combining athlete state, readiness, testing, development context and recent changes within a shared review workflow.
+
+![Sports Performance Platform Performance Overview](images/spp-performance-overview-desktop.webp)
+
+### Training Assignments
+
+An operational training workspace supporting assignment deployment, filtering, source lineage, execution state and follow-through.
+
+![Sports Performance Platform Training Assignments](images/spp-assignments-desktop.webp)
 
 ---
 
